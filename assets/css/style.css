@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+
+	html, body {
+		height: 100%;
+	}
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  .content {
+		/* position: fixed; */
+		height: 100%;
+    text-align: center;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+		display: table;
+
+  }
+
+  .logo {
+		display: table-cell; 
+		vertical-align: middle; 
+		text-shadow: 4px 4px 4px #000000;  }
+
+	.logo h1 {
+		font-size: 60px;
+	}
+
+	.logo h2 {
+		font-size: 20px;
+	}
+
+	.logo h1, h2 {
+		margin: 0px;
+	}
