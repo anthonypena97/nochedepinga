@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+		overflow: hidden;
   }
 
 	html, body {
@@ -12,17 +13,25 @@
     font-size: 17px;
   }
 
+#video-parent {
+	position: fixed;
+	min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+	#video-container {
+		display: flex;
+	}
+
   #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
     min-width: 100%; 
     min-height: 100%;
-    z-index: -1;
   }
 
+
   .content {
-		/* position: fixed; */
+		position: fixed;
 		height: 100%;
     text-align: center;
     color: #f1f1f1;
