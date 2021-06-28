@@ -47,7 +47,7 @@
 
 #logo-image {
 	width: 30%;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 
 }
 
@@ -61,12 +61,16 @@
 	opacity: 50%;
 }
 
-.countdown {
+.countdown-style {
 	display: block;
 	margin: auto;
 	background-color: rgba(184, 157, 97, 0.5);
+	color: black;
+	font-weight: lighter;
+	letter-spacing: 3px;
 	width: 20%;
 	border-radius: 20px;
 	padding: 5px;
 	text-shadow: none;
+	/* display: none; */
 }

@@ -6,8 +6,21 @@ function myFunction() {
     }
 }
 
+function fadeCountdown() {
+    var countdownElement = document.getElementById("countdown")
+    var logoElement = document.getElementById("logo-container")
+
+    countdownElement.style.display = "block";
+    logoElement.style.display = "block";
+};
+
+setTimeout(fadeCountdown, 1000);
+
+// fadeCountdown();
+
 // Set the date we're counting down to
 // Set to Eastern Standard Time
+
 var countDownDate = new Date("2021-07-08T16:00:00.1-04:00").getTime();
 
 // Update the count down every 1 second
@@ -26,8 +39,8 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.getElementById("countdown").innerHTML = days + "D " + hours + "H "
-        + minutes + "M " + seconds + "S";
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
 
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -35,3 +48,4 @@ var x = setInterval(function () {
         document.getElementById("countdown").innerHTML = "TICKET LINK";
     }
 }, 1000);
+
