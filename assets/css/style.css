@@ -44,16 +44,34 @@
   .logo {
 		display: table-cell; 
 		vertical-align: middle; 
-		text-shadow: 4px 4px 4px #000000;  }
-
-	.logo h1 {
-		font-size: 60px;
+		text-shadow: 4px 4px 4px #000000;  
 	}
 
 	.logo h2 {
 		font-size: 20px;
 	}
 
-	.logo h1, h2 {
+	.logo h2 {
 		margin: 0px;
+	}
+
+	.logo a {
+		text-decoration: none;
+		color: white;
+		font-size: 60px;
+		font-weight: bold;
+	}
+
+	.logo a:hover {
+		opacity: 50%;
+	}
+
+	.countdown {
+		display: inline-block;
+		margin: 15px;
+		background-color: rgba(0, 0, 255, 0.5);
+		width: 25%;
+		border-radius: 20px;
+		padding: 5px;
+		text-shadow: none;
 	}
