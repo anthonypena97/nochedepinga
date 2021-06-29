@@ -1,4 +1,4 @@
-debugger;
+// debugger;
 
 var video = document.getElementById("myVideo");
 
