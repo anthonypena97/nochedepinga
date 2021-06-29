@@ -6,15 +6,14 @@ function myFunction() {
     }
 }
 
-function fadeCountdown() {
-    var countdownElement = document.getElementById("countdown")
-    var logoElement = document.getElementById("logo-container")
-
-    countdownElement.style.display = "block";
-    logoElement.style.display = "block";
+function fadeIn() {
+    $(document).ready(function () {
+        $("#logo-container").fadeIn(4000);
+        $("#countdown").fadeIn(4000);
+    });
 };
 
-setTimeout(fadeCountdown, 1000);
+setTimeout(fadeIn, 1000);
 
 // fadeCountdown();
 
