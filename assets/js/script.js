@@ -13,10 +13,7 @@ function fadeIn() {
     });
 };
 
-setTimeout(fadeIn, 1000);
-
-
-$(document).ready(function () {
+function countDownTimer() {
     // Set the date we're counting down to
     // Set to Eastern Standard Time
     var countDownDate = new Date("2021-07-08T16:00:00.1-04:00").getTime();
@@ -46,4 +43,7 @@ $(document).ready(function () {
             document.getElementById("countdown").innerHTML = "TICKET LINK";
         }
     }, 1000);
-});
+};
+
+setTimeout(countDownTimer, 250);
+setTimeout(fadeIn, 1000);
