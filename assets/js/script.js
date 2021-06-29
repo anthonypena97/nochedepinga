@@ -1,3 +1,9 @@
+$.ajaxSetup
+    ({
+        // Disable or Enable caching of AJAX
+        cache: false // or true
+    });
+
 var video = document.getElementById("myVideo");
 
 function myFunction() {
@@ -15,11 +21,8 @@ function fadeIn() {
 
 setTimeout(fadeIn, 1000);
 
-// fadeCountdown();
-
 // Set the date we're counting down to
 // Set to Eastern Standard Time
-
 var countDownDate = new Date("2021-07-08T16:00:00.1-04:00").getTime();
 
 // Update the count down every 1 second
@@ -47,4 +50,3 @@ var x = setInterval(function () {
         document.getElementById("countdown").innerHTML = "TICKET LINK";
     }
 }, 1000);
-
