@@ -1,3 +1,5 @@
+debugger;
+
 var video = document.getElementById("myVideo");
 
 function myFunction() {
