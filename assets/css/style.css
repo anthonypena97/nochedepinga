@@ -1,19 +1,20 @@
 * {
   box-sizing: border-box;
 	overflow: hidden;
-  }
+}
 
-	html, body {
-		height: 100%;
-	}
+html, body {
+	width: 100%;
+	height: 100%;
+}
   
-  body {
-    margin: 0;
-    font-family: new-spirit-condensed, serif;
-		font-weight: 400;
-		font-style: normal;
-    font-size: 17px;
-  }
+body {
+  margin: 0;
+  font-family: new-spirit-condensed, serif;
+	font-weight: 400;
+	font-style: normal;
+  font-size: 17px;
+}
 
 #video-parent {
 	position: fixed;
@@ -75,3 +76,89 @@
 	font-size: 2vw;
 }
 
+/* tables */
+@media screen and (max-width: 1024px) {
+	#video-parent {
+		min-width: auto; 
+	}
+
+	#video-container {
+		flex: none;
+		height: 1366px;
+	}
+
+	#myVideo {
+		width: auto;
+		max-height: none;
+		left: -200px;
+	}
+
+	#logo-image {
+		width: 75%;
+		margin-bottom: 15px;
+	
+	}
+
+	.countdown-style {
+		width: 60%;
+		font-size: 6vw;
+	}
+}
+
+/* tables */
+@media screen and (max-width: 768px) {
+	#video-parent {
+		min-width: auto; 
+	}
+
+	#video-container {
+		flex: none;
+		height: 1024px;
+	}
+
+	#myVideo {
+		width: auto;
+		position: fixed;
+		max-height: none;
+	}
+
+	#logo-image {
+		width: 75%;
+		margin-bottom: 15px;
+	
+	}
+
+	.countdown-style {
+		width: 60%;
+		font-size: 6vw;
+	}
+}
+
+
+/* mobiles */
+@media screen and (max-width: 580px) {
+	#logo-image {
+		width: 100%;
+		margin-bottom: 15px;
+	
+	}
+
+	.countdown-style {
+		width: 90%;
+		font-size: 8vw;
+	}
+
+	#video-parent {
+		min-width: auto; 
+	}
+
+	#video-container {
+		flex: none;
+		height: 1000px;
+	}
+
+	#myVideo {
+		width: auto;
+		max-height: none;
+	}
+}
