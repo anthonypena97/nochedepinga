@@ -10,8 +10,8 @@ function myFunction() {
 
 function fadeIn() {
     $(document).ready(function () {
-        $("#logo-container").fadeIn(2000);
-        $("#countdown").fadeIn(2000);
+        $("#logo-container").fadeIn(4000);
+        $("#countdown").fadeIn(4000);
     });
 };
 
