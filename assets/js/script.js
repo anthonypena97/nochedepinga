@@ -18,7 +18,7 @@ function fadeIn() {
 function countDownTimer() {
     // Set the date we're counting down to
     // Set to Eastern Standard Time
-    var countDownDate = new Date("2021-06-08T17:00:00.1-04:00").getTime();
+    var countDownDate = new Date("2021-07-08T17:00:00.1-04:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
