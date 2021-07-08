@@ -76,6 +76,15 @@ body {
 	font-size: 2vw;
 }
 
+.countdown-style a {
+	text-decoration: none;
+	color: black;
+}
+
+.countdown-style a:hover {
+	opacity: 40%;
+}
+
 /* tables */
 @media screen and (max-width: 1024px) {
 	#video-parent {

@@ -18,7 +18,7 @@ function fadeIn() {
 function countDownTimer() {
     // Set the date we're counting down to
     // Set to Eastern Standard Time
-    var countDownDate = new Date("2021-07-08T16:00:00.1-04:00").getTime();
+    var countDownDate = new Date("2021-06-08T17:00:00.1-04:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
@@ -42,7 +42,14 @@ function countDownTimer() {
         // If the count down is over, write some text 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "TICKET LINK";
+            document.getElementById("countdown").innerHTML = "";
+
+            var countdownId = document.getElementById("countdown")
+            var anchorContainer = document.createElement("A");
+            var t = document.createTextNode("PURCHASE TICKETS");
+            anchorContainer.setAttribute("href", "https://noche-depinga-la-resurrection.eventbrite.com");
+            anchorContainer.appendChild(t);
+            countdownId.appendChild(anchorContainer);
         }
     }, 1000);
 };
